@@ -1,0 +1,140 @@
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+                url("https://i.ytimg.com/vi/dqOmQFDbo-Q/maxresdefault.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#createMovie {
+    display: None;
+    margin-top: 2%;
+    margin: 20px auto;
+    background-color: rgb(68, 68, 68);
+    width: 245px;
+    padding-left: 15px;
+    border-radius: 14px;
+    padding-bottom: 4px;
+    padding-top: 2px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+    letter-spacing: 2px;
+    font-size: medium;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin-block: 3%;
+}
+
+#name, #year, #url {
+    display: block;
+    width: 220px;
+    height: 30px;
+    border-radius: 14px;
+}
+
+
+#url {
+    margin-bottom: 15px;
+}
+
+#movieForm {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.sortholder, .yearFilter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.yearFilter {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    gap: 7px;
+    color: whitesmoke;
+}
+
+.year-container {
+    background-color: grey;
+    padding-inline: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #000000;
+}
+
+#yearFilter, #filterButton {
+    background-color: whitesmoke;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+#filterButton:hover {
+    background-color: #000000;
+    color: whitesmoke;
+}
+
+#submitButton {
+    display: block;
+    margin: 20px auto;
+}
+
+#movieForm > button, #submitButton, #Sort {
+    background-color: grey;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    color: whitesmoke;
+}
+
+#Sort:hover {
+    background-color: whitesmoke;
+    color: black;   
+}
+
+#movieForm > button:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#submitButton:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.container {
+    display: flex;
+    gap: 25px;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movieBox {
+    display: inline;
+    background-color: rgba(30, 22, 22, 0.673) !important;
+    position: relative;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 20px;
+    padding-inline: 25px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    width: 220px;
+}
+
+.movieBox > img {
+    width: 100px;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid black !important;
+}
