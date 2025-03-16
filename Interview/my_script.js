@@ -70,7 +70,14 @@ function createNewMovie(event) {
     yearOption.value = yearOfMovie.textContent;
     yearOption.textContent = yearOfMovie.textContent;
 
-    dropDownMenu.appendChild(yearOption);
+    const allYearsOptions = document.querySelectorAll('option');
+    const yearsList = Array.from(allYearsOptions).map(option => option.value);
+
+
+    if (!yearsList.includes(yearOption.value)) {
+        dropDownMenu.appendChild(yearOption);
+    }
+
     boxElement.appendChild(nameOfMovie);
     boxElement.appendChild(yearOfMovie);
     boxElement.appendChild(image);
