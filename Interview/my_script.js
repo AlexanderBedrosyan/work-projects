@@ -108,7 +108,6 @@ function filterByYear(event) {
     movies.forEach(movie => {
         const movieYear = movie.querySelector("p").textContent;
         
-        // Ако избраната година е "all", показваме всички филми
         if (selectedYear === "all" || movieYear === selectedYear) {
             movie.style.display = "block";
         } else {
